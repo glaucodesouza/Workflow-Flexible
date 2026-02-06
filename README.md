@@ -11,3 +11,7 @@ https://community.sap.com/t5/technology-blog-posts-by-members/determining-sap-fl
 2. Administrar contextos de responsabilidade  
   
 3. Administrar workflows (Configurar WF Etapa)  
+
+## Esquema Config responsáveis e novo campo custom p/ config wf
+<img width="1742" height="998" alt="image" src="https://github.com/user-attachments/assets/37614e6e-92fb-4272-b0f3-aeb5c052839c" />
+
