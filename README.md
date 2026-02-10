@@ -16,6 +16,7 @@ https://community.sap.com/t5/technology-blog-posts-by-members/determining-sap-fl
 <img width="1742" height="998" alt="image" src="https://github.com/user-attachments/assets/37614e6e-92fb-4272-b0f3-aeb5c052839c" />
 
 Main transactions
+- SWEQADM  Administração da fila de eventos (Event Queue Administration)
 - PFTC  Create/maintain workflow tasks (Standard & Custom)
 - SWDD  Workflow Builder – create/change workflows
 - SWDD_CONFIG  Workflow configuration for flexible workflows
@@ -30,7 +31,7 @@ Main transactions
 - SWPC  Continue workflow after error
 - SWETYPV  Link events to workflow (event coupling)
 - SWE2  Event type linkage overview
-- SWF_ADM  General workflow administration menu
+- SWEQPR  Processamento da fila de eventos
 
 
 WF Flex
