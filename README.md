@@ -2,8 +2,11 @@
 https://www.youtube.com/watch?v=DjWucp2X9T0  
 https://www.youtube.com/watch?v=MQa4gMWlIic
 
-BLOG Buscar Agents for approving of work item  
+BLOG Buscar responsáveis para aprovar work item    
 https://community.sap.com/t5/technology-blog-posts-by-members/determining-sap-flexible-workflow-agents-with-custom-responsibility-rules/ba-p/13558459  
+
+BLOG (outro) Como criar Workflow flexível
+https://community.sap.com/t5/technology-blog-posts-by-sap/flexible-workflows-custom-flexible-workflow-scenario-for-re-fx-contract/ba-p/13476198  
 
 ## Apps
 1. Administrar regras de responsabilidade  
