@@ -13,7 +13,8 @@ Adicionar codificação como abaixo:
       LOOP AT ct_lporb ASSIGNING <fs_lporb> WHERE catid  = 'BO' AND
                                                   typeid = 'BUS2100002'.
   
-        "map key from FIPP (BUKRS,BELNR,GJAHR) to (BELNR,BUKRS,GJAHR)      CONCATENATE
+        "map key from FIPP (BUKRS,BELNR,GJAHR) to (BELNR,BUKRS,GJAHR)      
+        "CONCATENATE
         "<fs_lporb>-instid+04(10)   "BELNR
         "<fs_lporb>-instid+00(04)   "BUKRS
         "<fs_lporb>-instid+14(04)   "GJAHR
