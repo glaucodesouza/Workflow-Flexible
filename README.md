@@ -54,6 +54,9 @@ WF Flex
 	- I_PMNotifMaintenanceData 	(Dados)
 - ok	Criar Classe ABAP (SE24) ZCL_WF_NOTA_MANUTENCAO
 	- ok	Criar Constructor
+	- ok	Copiar método WORKITEM_EXECUTE (Instance, pub)
+	- ok	Copiar método GET_CLASS_NAME (Instance, protected)
+	- ok	Copiar método EXECUTE (Instance, pub)
 	- ok	Criar parâmetros com tabelas corretas
 - ok	Criar Workflow Flexível (/nSWDD_SCENARIO)
 	- ok	WS99900021
