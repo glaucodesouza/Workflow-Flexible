@@ -41,3 +41,45 @@ WF Flex
 - SWDD_SCENARIO
 - SWFVISU
 - /n/UI2/FLP Home / Launchpad
+
+## SCRIPT-CRIAR-WORFLOW-FLEXÍVEL
+
+- ok	Descobrir Quais são as Tabelas Transparentes (Funcional + Copilot)
+	- QMEL	(Header)
+	- QMFE	(Item)
+	- QMIH	(Dados)
+- ok	Descobrir Quais são as CDS VIEWS (Copilot + Eclipse)
+	- I_MaintenanceNotification 	(Header)
+	- I_MaintNotificationItemData	(Item)
+	- I_PMNotifMaintenanceData 	(Dados)
+- ok	Criar Classe ABAP (SE24) ZCL_WF_NOTA_MANUTENCAO
+	- ok	Criar Constructor
+	- ok	Criar parâmetros com tabelas corretas
+- ok	Criar Workflow Flexível (/nSWDD_SCENARIO)
+	- ok	WS99900021
+	- ok	Criar variáveis do workflow
+	- ok	Criar tarefa de Aprovação
+	- nok	Criar Condições
+		- ok	Tipo de nota	QMEL-QMART
+		- ok	TIPO DE GRUPO 	QMIH-INGRP
+		- ok	CENTRO 			QMIH-IWERK
+	- ok	Criar Regra de busca de repsonsáveis
+		- INGRP+Code
+		- ok	App Administrar contextos de responsabilidade
+		- ok	Administrar regras de responsabilidade
+		- ok	Criar BADI Busca Responsáveis
+- ok	Implementar BADI de Disparo NOTIF_EVENT_POST
+	- ok	Z_PM_NOTI_WS99900021 Implementação de BADI
+	- ok	ZCL_IM_PM_NOTI_WS99900021 Classe ABAP da Implementação de BADI
+	- ok	Criar método para disparo (trigger_wf)
+	- ok	Criar método para CANCEL (cancel_wf)
+	- ok	Criar Função para Disparo ZPMF0005 (+ STATUS_CHANGE_INTERN)
+	- ok	Criar Função para CANCEL ZPMF0006
+	- ok	Criar Função EXPORT ZWWFF2057
+	- ok	Criar Função IMPORT ZWWFF2058
+- ok	Criar Classes de CALLBACK
+		- ok	ZCL_SWF_FLEX_NOTA_DEF
+		- ok	ZCL_SWF_FLEX_NOTA_RUN
+	- ok	ZCL_SWF_FLEX_NOTA_RUN-RESULT_CALLBACK()
+		- ok	Criar Método p/ Troca de STATUS CLASSE (ZCL_WF_NOTA_MANUTENCAO=>SET_DOCUMENT_AS_APPROVED( STATUS_CHANGE_INTERN ) )
+- nok	Botão GOS BADI GOS_MULT_PUBLISH
