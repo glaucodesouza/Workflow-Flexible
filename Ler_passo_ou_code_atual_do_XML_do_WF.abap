@@ -1,5 +1,14 @@
   METHOD calcular_code_passo_atual.
-
+    importing
+      !I_WF_KEY type STRING optional
+      !I_WF_SCENARIO type STRING optional
+    exporting
+      !E_WORKFLOW_ID type SWW_WIID
+      !E_STEP type INT1
+      !E_CODE type ZDE_CODE_APROV
+      !E_NIVELCODE type TY_NIVELCODE_TT
+    raising
+      CX_SWF_FLEX_IFS_EXCEPTION .
 *  IV_WF_KEY
 *  IV_WF_SCENARIO
 *  EV_STEP
